@@ -1,0 +1,165 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Verdana,sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section {
+ width:70%;
+  margin: 30px auto;
+}
+
+h2 {
+font-weight: 500;
+  letter-spacing: 6px;
+  border-bottom: 1px solid grey;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 5px;
+  position: fixed;
+  background: white;
+  opacity: 1;
+  z-index: 10;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  margin-inline-start: 50px;
+  text-transform: capitalize;
+  letter-spacing: 6px;
+  padding: 15px;
+}
+
+nav span {
+  font-weight: 900;
+  letter-spacing: 6px;
+}
+nav a:hover {
+  cursor: pointer;
+  background-color: #CCCCCC;
+}
+
+.hero {
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  letter-spacing: 6px;
+  font-weight: 500;
+  background-image: url("../img/architect.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+.hero span {
+  background-color: rgba(0, 0, 0, 0.67);
+  padding: 20px;
+}
+.box {
+  width: 23%;
+  height: max-content;
+  background-size: cover;
+  position: relative;
+  min-width: 200px;
+}
+.box p {
+  color: white;
+  background-color: black;
+  padding: 10px;
+  width: max-content;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+.box img {
+  width: 100%;
+  min-width: 200px;
+}
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+.aboutBox {
+  width: 24%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 260px;
+}
+
+.aboutBox h3 {
+  font-weight: 500;
+}
+.aboutBox h4 {
+  color: #888888;
+  font-weight: 200;
+  font-size: 12px;
+}
+.aboutBox p {
+  font-weight: 200;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.aboutBox button {
+  width: 100%;
+  padding: 10px 0;
+
+}
+.About p, .Contact p {
+  margin: 30px 0;
+}
+.aboutBoxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+.Contact p {
+  margin: 10px 0;
+}
+.contactForm {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.contactForm input {
+  padding: 8px ;
+}
+.contactForm button {
+  width: max-content;
+  padding: 10px;
+  color: white;
+  background: black;
+}
+.map {
+  display: flex;
+  justify-content: center;
+}
+.map img {
+  width: 100%;
+}
+button {
+  border: none;
+}
+.aboutBox img {
+  filter: grayscale(80%);
+}
